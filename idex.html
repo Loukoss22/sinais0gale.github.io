@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm//bootstrap-icons@1.10.5/font/bootstrap-icons.css" <!--
+    BOOTSTRAP POPPER.JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- FIM BOOTSTRAP -->
+
+  <!-- SUAS FOLHAS DE ESTILO E OUTROS SCRIPTS AQUI -->
+  <link rel="stylesheet" href="style.css">
+
+  <script src="menu.js" defer></script>
+
+  <title>Sinais</title>
+</head>
+
+<body>
+
+  <div class="cookies-msg" id="cookies-msg">
+    <div class="cookies-txt">
+      <p>Observe que o atributo onclick é puramente JavaScript. O valor que ele recebe, que é a função que será
+        executada, diz tudo, já que ela é invocada diretamente da tag de abertura.</p>
+      <div class="cookies-btn">
+        <button onclick="aceito()">Aceito</button>
+      </div>
+    </div>
+  </div><!--cookies-msg-->
+  <header>
+    <div class="interface">
+      <div class="logo">
+        <a href="#">
+          <img src="imagens/vip.jpg" alt="Logo da Agencia SinaisVip">
+        </a>
+      </div><!--logo-->
+
+      <nav class="menu-desktop">
+        <ul>
+          <li><a href="#" id="Inicio1">inicio</a></li>
+          <li><a href="#">Especialidades</a></li>
+          <li><a href="#">Sobre</a></li>
+          <iframe src="https://blaze-6.com/pt/games/double" width="700" height="400" frameborder="0"></iframe>
+
+        </ul>
+      </nav><!--menu-desktop-->
+
+      <div class="btn-contato">
+        <a href="#">
+          <button id="linkTelegramBtn">Contato</button>
+        </a>
+      </div><!--btn-contato-->
+
+      <div class="btn-abrir" id="btn-abrir">
+        <i class="bi bi-list-stars"></i>
+      </div><!--btn-abrir-->
+
+      <div class="menu-mobile" id="menu-mobile">
+        <div class="btn-fechar">
+          <i class="bi bi-x-lg"></i>
+        </div><!--btn-fechar-->
+        <nav>
+          <ul>
+            <li><a href="#" id="Inicio">inicio</a></li>
+            <li><a href="#">Especialidades</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+      </div><!--menu-mobile-->
+      <div class="overlay-menu" id="overlay-menu"></div>
+    </div><!--interface-->
+    <script>
+      // Selecione o botão pelo ID
+      var linkTelegramBtn = document.getElementById('linkTelegramBtn');
+
+      // Adicione um ouvinte de evento para o clique no botão
+      linkTelegramBtn.addEventListener('click', function () {
+        // URL do seu perfil no Telegram
+        var linkTelegram = 'https://t.me/BlazevipY'; // Substitua pelo seu nome de usuário
+
+        // Redirecione o usuário para o seu perfil no Telegram
+        window.location.href = linkTelegram;
+      });
+    </script>
+
+    </script>
+  </header>
+
+  <main>
+    <section class="topo-do-site">
+      <div class="interface">
+        <h2 class="title">SEJA UM <span>MEMBRO VIP.</title></span></h2>
+        <div class="flex">
+          <div class="txt-topo-site">
+            <h1>TRANSFORMANDO VIDAS<span>.</span></h1>
+            <p>criando ideias revolucionarias afim de ficar mult milionario!</p>
+            <div class="btn-contato">
+              <a href="#" id="linkContato">
+                <button>Entre em Contato</button>
+              </a>
+              <script>
+                var linkContato = document.getElementById('linkContato');
+
+                if (linkContato) {
+                  linkContato.addEventListener('click', function () {
+                    // Redireciona para o link do Telegram
+                    window.location.href = 'https://t.me/BlazevipY';
+                  });
+                } else {
+                  console.error('Elemento com o ID "linkContato" não foi encontrado.');
+                }
+              </script>
+            </div><!--btn-contato-->
+          </div><!--txt-topo-site-->
+
+          <div class="img-topo-site">
+            <img src="imagens/blaze.jpg" alt="">
+          </div><!--img-topo-site-->
+        </div><!--flex-->
+      </div><!--interface-->
+    </section><!--topo-do-site-->
+
+    <section class="especialidades">
+      <div class="interface">
+        <h2 class="titulo" MINHAS> <span>ESPECIALIDADES.</span></h2>
+        <div class="flex">
+          <div class="especialidades-box">
+            <i class="bi bi-code-square"></i>
+            <h3>Website</h3>
+            <p>Bem-vindo ao [BLAZE TREND SIGNS], o destino premium para traders sérios em busca de vantagens
+              significativas nos mercados financeiros. Nosso compromisso é proporcionar uma experiência VIP única,
+              impulsionando o sucesso financeiro dos nossos membros.</p>
+          </div><!--especialidades-box-->
+
+          <div class="especialidades-box">
+            <i class="bi bi-cart-check"></i>
+            <h3>Comprar</h3>
+            <p>Nossa equipe de especialistas em trading possui um histórico comprovado de identificação de oportunidades
+              lucrativas. Ao aderir aos nossos sinais VIP, você se alinha com uma tradição de sucesso.</p>
+          </div><!--especialidades-box-->
+
+          <div class="especialidades-box">
+            <i class="bi bi-substack"></i>
+            <h3>Regras</h3>
+            <p>Propriedade Intelectual:
+
+              Descrição: Respeite os direitos autorais e de propriedade intelectual. Não publique conteúdo protegido por
+              direitos autorais sem permissão. Todo o conteúdo deve ser legal e respeitar os direitos de terceiros.
+              Segurança da Conta:</p>
+          </div><!--especialidades-box-->
+        </div><!--flex-->
+      </div><!--interface-->
+    </section><!--especialidades-->
+
+    <section class="sobre">
+      <div class="interface">
+        <div class="flex">
+        </div class="img-sobre">
+        <img src="imagens/02.png" alt="">
+      </div><!--img-sobre-->
+
+      <div class="txt-sobre">
+        <h2 class="title">BLAZE TREND <span>SIGNS.</span></h2>
+        <p>Se você deseja diminuir o tamanho da imagem dentro da interface seu código.</p>
+        <p>loren isusff fdg gfdfg hdfdfhfghdf hdfghdf.</p>
+        <div class="btn-social">
+          <!-- Botão do Instagram -->
+
+          <a href="#" id="instagramBtn">
+            <button><i class="bi bi-instagram"></i></button>
+          </a>
+
+          <!-- Botão do YouTube -->
+          <a href="#" id="youtubeBtn">
+            <button><i class="bi bi-youtube"></i></button>
+          </a>
+
+          <!-- Botão do Telegram -->
+          <a href="#" id="telegramBtn">
+            <button><i class="bi bi-telegram"></i></button>
+          </a>
+
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              // Botão do Instagram
+              var instagramBtn = document.getElementById('instagramBtn');
+              instagramBtn.addEventListener('click', function () {
+                // Adicione a lógica para o botão do Instagram
+                console.log('Botão do Instagram clicado!');
+                // Adicione mais lógica aqui conforme necessário
+              });
+
+              // Botão do YouTube
+              var youtubeBtn = document.getElementById('youtubeBtn');
+              youtubeBtn.addEventListener('click', function () {
+                // Adicione a lógica para o botão do YouTube
+                console.log('Botão do YouTube clicado!');
+                // Adicione mais lógica aqui conforme necessário
+              });
+
+              // Botão do Telegram
+              var telegramBtn = document.getElementById('telegramBtn');
+              telegramBtn.addEventListener('click', function () {
+                // Adicione a lógica para o botão do Telegram
+                console.log('Botão do Telegram clicado!');
+                // Adicione mais lógica aqui conforme necessário
+              });
+            });
+          </script>
+
+        </div><!--btn-social-->
+
+      </div><!--txt - sobre-->
+      </div><!--flex-->
+
+      </div><!--interface-->
+
+    </section><!--sobre-->
+
+    <section class="portfolio">
+      <div class="interface">
+        <h2 class="title">MINHAS REGRAS, <span>MINHA VIDA</span></h2>
+        <div class="flex">
+          <div class="img-port" style="background-image: url(imagens/01.jpg);">
+            <div class="overlay">Imagem 1</div>
+          </div>
+          <div class="img-port" style="background-image: url(imagens/01.jpg);">
+            <div class="overlay">Imagem 2</div>
+          </div>
+          <div class="img-port" style="background-image: url(imagens/01.jpg);">
+            <div class="overlay">Imagem 3</div>
+          </div>
+        </div><!--flex-->
+
+      </div><!--interface-->
+
+    </section><!--portfolio-->
+
+    <section class="formulario">
+      <div class="intrface">
+        <h2 class="title">RECLAME, <span>AQUI !!!</span></h2>
+
+        <form action="enviar-email.php" method="post">
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
+
+          <label for="email">E-mail:</label>
+          <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+
+          <label for="celular">Celular:</label>
+          <input type="tel" name="celular" id="celular" placeholder="Seu celular" required>
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" required></textarea>
+
+          <div class="btn-enviar">
+            <input type="submit" value="Enviar">
+          </div>
+
+        </form>
+
+      </div><!--interface-->
+    </section><!--formulario-->
+  </main>
+  <footer>
+    <div class="interface">
+      <div class="line-footer">
+        <div class="flex">
+          <div class="logo-footer">
+            <img src="imagens/vip.jpg" alt="Logotipo Agência RF.B">
+          </div><!--logo-footer-->
+          <div class="btn-social">
+            <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+            <a href="#"><button><i class="bi bi-youtube"></i></button></a>
+            <a href="#"><button><i class="bi bi-telegram"></i></button></a>
+          </div><!--btn-social-->
+        </div><!--flex-->
+
+      </div><!--line-footer-->
+
+      <div class="line-footer, borda">
+        <p><i class="bi bi-envelope-at"></i> <a href="mailto:blazedouble@gmail.com">blazedouble@gmail.com</a></p>
+
+      </div><!--line-footer-->
+
+    </div><!--interface-->
+  </footer>
+</body>
+
+</html>
